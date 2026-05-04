@@ -1,10 +1,14 @@
 // 1. The Translation Dictionary
 const translations = {
     en: {
+        // Navigation & Footer
         nav_home: "Home",
         nav_menu: "Menu",
         nav_location: "Location",
         nav_book: "Book a Table",
+        footer_text: "© 2026 Restaurante Prueba. All rights reserved.",
+        
+        // Homepage
         hero_title: "Welcome to Restaurante Prueba",
         hero_subtitle: "Experience the finest culinary delights in a cozy atmosphere.",
         hero_btn: "Reserve Now",
@@ -17,13 +21,41 @@ const translations = {
         form_time_select: "Select a time",
         form_guests: "Number of Guests",
         form_btn: "Confirm Booking",
-        footer_text: "© 2026 Restaurante Prueba. All rights reserved."
+
+        // Menu Page
+        menu_title: "Our Menu",
+        menu_subtitle: "Discover our carefully crafted dishes",
+        cat_starters: "Starters",
+        item_bruschetta: "Garlic Bruschetta",
+        desc_bruschetta: "Toasted bread with tomatoes, garlic, and fresh basil.",
+        item_calamari: "Crispy Calamari",
+        desc_calamari: "Served with our homemade tartar sauce.",
+        cat_mains: "Main Courses",
+        item_salmon: "Grilled Salmon",
+        desc_salmon: "Wild-caught salmon with asparagus and lemon butter.",
+        item_risotto: "Truffle Mushroom Risotto",
+        desc_risotto: "Creamy arborio rice with wild mushrooms and parmesan.",
+
+        // Location Page
+        loc_title: "Find Us",
+        loc_subtitle: "Come visit our restaurant in the heart of the city.",
+        loc_address_lbl: "Address:",
+        loc_address_val: "123 Culinary Street, Food District, City 10001",
+        loc_phone_lbl: "Phone:",
+        loc_email_lbl: "Email:",
+        loc_hours_title: "Opening Hours",
+        loc_hours_val1: "Tuesday - Sunday: 12:00 - 15:30 & 19:30 - 23:00",
+        loc_hours_val2: "Monday: Closed"
     },
     es: {
+        // Navigation & Footer
         nav_home: "Inicio",
         nav_menu: "Menú",
         nav_location: "Ubicación",
         nav_book: "Reservar",
+        footer_text: "© 2026 Restaurante Prueba. Todos los derechos reservados.",
+        
+        // Homepage
         hero_title: "Bienvenido a Restaurante Prueba",
         hero_subtitle: "Experimente las mejores delicias culinarias en un ambiente acogedor.",
         hero_btn: "Reservar Ahora",
@@ -36,10 +68,33 @@ const translations = {
         form_time_select: "Selecciona una hora",
         form_guests: "Número de Personas",
         form_btn: "Confirmar Reserva",
-        footer_text: "© 2026 Restaurante Prueba. Todos los derechos reservados."
+
+        // Menu Page
+        menu_title: "Nuestro Menú",
+        menu_subtitle: "Descubra nuestros platos cuidadosamente elaborados",
+        cat_starters: "Entrantes",
+        item_bruschetta: "Bruschetta de Ajo",
+        desc_bruschetta: "Pan tostado con tomate, ajo y albahaca fresca.",
+        item_calamari: "Calamares Crujientes",
+        desc_calamari: "Servidos con nuestra salsa tártara casera.",
+        cat_mains: "Platos Principales",
+        item_salmon: "Salmón a la Parrilla",
+        desc_salmon: "Salmón salvaje con espárragos y mantequilla de limón.",
+        item_risotto: "Risotto de Setas y Trufa",
+        desc_risotto: "Cremoso arroz arborio con setas silvestres y parmesano.",
+
+        // Location Page
+        loc_title: "Encuéntrenos",
+        loc_subtitle: "Venga a visitar nuestro restaurante en el corazón de la ciudad.",
+        loc_address_lbl: "Dirección:",
+        loc_address_val: "123 Calle Culinaria, Distrito Gastronómico, Ciudad 10001",
+        loc_phone_lbl: "Teléfono:",
+        loc_email_lbl: "Correo:",
+        loc_hours_title: "Horario de Apertura",
+        loc_hours_val1: "Martes - Domingo: 12:00 - 15:30 y 19:30 - 23:00",
+        loc_hours_val2: "Lunes: Cerrado"
     }
 };
-
 // 2. The Language Switching Function
 function setLanguage(languageCode) {
     // Find every element that has a 'data-i18n' attribute
