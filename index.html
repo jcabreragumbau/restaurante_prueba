@@ -14,18 +14,25 @@
         <div class="logo">Restaurante Prueba</div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="index.html#book" class="nav-cta">Book a Table</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+                <li><a href="location.html" data-i18n="nav_location">Location</a></li>
+                <li><a href="index.html#book" class="nav-cta" data-i18n="nav_book">Book a Table</a></li>
+                <!-- NEW: Language Toggle -->
+                <li>
+                    <select id="language-selector">
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <h1>Welcome to Restaurante Prueba</h1>
-        <p>Experience the finest culinary delights in a cozy atmosphere.</p>
-        <a href="#book" class="cta-button">Reserve Now</a>
+        <h1 data-i18n="hero_title">Welcome to Restaurante Prueba</h1>
+        <p data-i18n="hero_subtitle">Experience the finest culinary delights in a cozy atmosphere.</p>
+        <a href="#book" class="cta-button" data-i18n="hero_btn">Reserve Now</a>
     </section>
 
     <section id="book" class="booking-section">
