@@ -87,3 +87,53 @@ document.getElementById('booking-form').addEventListener('submit', async functio
         submitBtn.disabled = false;
     }
 });
+
+// 1. The Translation Dictionary
+const translations = {
+    en: {
+        nav_home: "Home",
+        nav_menu: "Menu",
+        nav_location: "Location",
+        nav_book: "Book a Table",
+        hero_title: "Welcome to Restaurante Prueba",
+        hero_subtitle: "Experience the finest culinary delights in a cozy atmosphere.",
+        hero_btn: "Reserve Now"
+        // Add more keys here for your form labels, footer, etc.
+    },
+    es: {
+        nav_home: "Inicio",
+        nav_menu: "Menú",
+        nav_location: "Ubicación",
+        nav_book: "Reservar",
+        hero_title: "Bienvenido a Restaurante Prueba",
+        hero_subtitle: "Experimente las mejores delicias culinarias en un ambiente acogedor.",
+        hero_btn: "Reservar Ahora"
+    }
+};
+
+// 2. The Language Switching Function
+function setLanguage(languageCode) {
+    // Find every element that has a 'data-i18n' attribute
+    const elements = document.querySelectorAll('[data-i18n]');
+    
+    elements.forEach(element => {
+        const translationKey = element.getAttribute('data-i18n');
+        // Update the text to match the dictionary
+        element.innerText = translations[languageCode][translationKey];
+    });
+
+    // Save the user's preference to their browser memory
+    localStorage.setItem('preferredLanguage', languageCode);
+    document.getElementById('language-selector').value = languageCode;
+}
+
+// 3. Event Listener for the Dropdown
+document.getElementById('language-selector').addEventListener('change', function(event) {
+    setLanguage(event.target.value);
+});
+
+// 4. On Page Load: Check if they already picked a language previously
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en'; // Default to English
+    setLanguage(savedLanguage);
+});
