@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Prueba</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Restaurante Prueba</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#book">Book a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Restaurante Prueba</h1>
+        <p>Experience the finest culinary delights in a cozy atmosphere.</p>
+        <a href="#book" class="cta-button">Reserve Now</a>
+    </section>
+
+    <section id="book" class="booking-section">
+        <h2>Book Your Table</h2>
+        <p>Reserve your spot and we will send you a confirmation email.</p>
+        
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+            </div>
+
+            <button type="submit" id="submit-btn">Confirm Booking</button>
+            <p id="form-message"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Restaurante Prueba. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
