@@ -1,5 +1,5 @@
 // Paste the URL you got from Google Apps Script here
-const GOOGLE_SHEET_URL = 'YOUR_WEB_APP_URL_HERE'; 
+const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxdZHR0oXN3ScA5E_wXH2k-x_CJC0YOiGJQHY9h6WsIxuWuBWtLq708GMXj2R50xTid/exec'; 
 const PEOPLE_PER_TABLE = 3;
 
 document.getElementById('booking-form').addEventListener('submit', async function(event) {
