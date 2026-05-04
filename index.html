@@ -18,7 +18,6 @@
                 <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
                 <li><a href="location.html" data-i18n="nav_location">Location</a></li>
                 <li><a href="index.html#book" class="nav-cta" data-i18n="nav_book">Book a Table</a></li>
-                <!-- NEW: Language Toggle -->
                 <li>
                     <select id="language-selector">
                         <option value="en">🇺🇸 EN</option>
@@ -36,30 +35,29 @@
     </section>
 
     <section id="book" class="booking-section">
-        <h2>Book Your Table</h2>
-        <p>Reserve your spot and we will send you a confirmation email.</p>
+        <h2 data-i18n="book_title">Book Your Table</h2>
+        <p data-i18n="book_subtitle">Reserve your spot and we will send you a confirmation email.</p>
         
         <form id="booking-form">
             <div class="form-group">
-                <label for="name">Full Name</label>
+                <label for="name" data-i18n="form_name">Full Name</label>
                 <input type="text" id="name" name="name" required>
             </div>
             
             <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="email" data-i18n="form_email">Email Address</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-group">
-                <label for="date">Date</label>
+                <label for="date" data-i18n="form_date">Date</label>
                 <input type="date" id="date" name="date" required>
             </div>
 
-            <!-- THIS IS THE UPDATED TIME DROPDOWN -->
             <div class="form-group">
-                <label for="time">Time</label>
+                <label for="time" data-i18n="form_time">Time</label>
                 <select id="time" name="time" required>
-                    <option value="" disabled selected>Select a time</option>
+                    <option value="" disabled selected data-i18n="form_time_select">Select a time</option>
                     <optgroup label="Lunch">
                         <option value="12:00">12:00</option>
                         <option value="13:30">13:30</option>
@@ -74,17 +72,17 @@
             </div>
 
             <div class="form-group">
-                <label for="guests">Number of Guests</label>
+                <label for="guests" data-i18n="form_guests">Number of Guests</label>
                 <input type="number" id="guests" name="guests" min="1" max="20" required>
             </div>
 
-            <button type="submit" id="submit-btn">Confirm Booking</button>
+            <button type="submit" id="submit-btn" data-i18n="form_btn">Confirm Booking</button>
             <p id="form-message"></p>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 Restaurante Prueba. All rights reserved.</p>
+        <p data-i18n="footer_text">&copy; 2026 Restaurante Prueba. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
