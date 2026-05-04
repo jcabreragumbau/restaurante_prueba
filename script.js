@@ -26,7 +26,7 @@ document.getElementById('booking-form').addEventListener('submit', function(even
 
     // Send the email using EmailJS
     // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs
-    emailjs.send('STLIZE_service', 'template_hhmf1wu', templateParams)
+    emailjs.send('STLIZE_service', 'template_p85ajbc', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             formMessage.style.color = '#27ae60';
