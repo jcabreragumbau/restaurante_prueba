@@ -7,8 +7,17 @@ const translations = {
         nav_book: "Book a Table",
         hero_title: "Welcome to Restaurante Prueba",
         hero_subtitle: "Experience the finest culinary delights in a cozy atmosphere.",
-        hero_btn: "Reserve Now"
-        // Add more keys here for your form labels, footer, etc.
+        hero_btn: "Reserve Now",
+        book_title: "Book Your Table",
+        book_subtitle: "Reserve your spot and we will send you a confirmation email.",
+        form_name: "Full Name",
+        form_email: "Email Address",
+        form_date: "Date",
+        form_time: "Time",
+        form_time_select: "Select a time",
+        form_guests: "Number of Guests",
+        form_btn: "Confirm Booking",
+        footer_text: "© 2026 Restaurante Prueba. All rights reserved."
     },
     es: {
         nav_home: "Inicio",
@@ -17,7 +26,17 @@ const translations = {
         nav_book: "Reservar",
         hero_title: "Bienvenido a Restaurante Prueba",
         hero_subtitle: "Experimente las mejores delicias culinarias en un ambiente acogedor.",
-        hero_btn: "Reservar Ahora"
+        hero_btn: "Reservar Ahora",
+        book_title: "Reserva Tu Mesa",
+        book_subtitle: "Reserva tu lugar y te enviaremos un correo de confirmación.",
+        form_name: "Nombre Completo",
+        form_email: "Correo Electrónico",
+        form_date: "Fecha",
+        form_time: "Hora",
+        form_time_select: "Selecciona una hora",
+        form_guests: "Número de Personas",
+        form_btn: "Confirmar Reserva",
+        footer_text: "© 2026 Restaurante Prueba. Todos los derechos reservados."
     }
 };
 
