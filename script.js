@@ -20,7 +20,7 @@ document.getElementById('booking-form').addEventListener('submit', function(even
 
     // Send the email using EmailJS
     // Parameter order: Service ID, Template ID, Template Params, PUBLIC KEY
-    emailjs.send('STLIZE_service', 'template_hhmf1wu', templateParams, 'sKOTPUoUydoZPd-Uc')
+    emailjs.send('STLIZE_service', 'template_hhmf1wu', templateParams, '7IsyP95cxD43-8Jcl')
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             formMessage.style.color = '#27ae60';
