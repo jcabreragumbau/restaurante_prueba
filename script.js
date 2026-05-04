@@ -1,7 +1,7 @@
 // Initialize EmailJS with your Public Key
 // You will need to create a free account at https://www.emailjs.com/
 (function() {
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+    emailjs.init("sKOTPUoUydoZPd-Uc"); // Replace with your actual public key
 })();
 
 document.getElementById('booking-form').addEventListener('submit', function(event) {
@@ -26,7 +26,7 @@ document.getElementById('booking-form').addEventListener('submit', function(even
 
     // Send the email using EmailJS
     // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send('STLIZE_service', 'template_hhmf1wu', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             formMessage.style.color = '#27ae60';
