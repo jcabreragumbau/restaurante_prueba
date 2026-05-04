@@ -46,9 +46,22 @@
                 <input type="date" id="date" name="date" required>
             </div>
 
+            <!-- THIS IS THE UPDATED TIME DROPDOWN -->
             <div class="form-group">
                 <label for="time">Time</label>
-                <input type="time" id="time" name="time" required>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <optgroup label="Lunch">
+                        <option value="12:00">12:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="15:00">15:00</option>
+                    </optgroup>
+                    <optgroup label="Dinner">
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                    </optgroup>
+                </select>
             </div>
 
             <div class="form-group">
