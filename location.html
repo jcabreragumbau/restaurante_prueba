@@ -8,33 +8,38 @@
 </head>
 <body>
 
-    <!-- Updated Header -->
     <header>
         <div class="logo">Restaurante Prueba</div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="index.html#book">Book a Table</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+                <li><a href="location.html" data-i18n="nav_location">Location</a></li>
+                <li><a href="index.html#book" class="nav-cta" data-i18n="nav_book">Book a Table</a></li>
+                <li>
+                    <select id="language-selector">
+                        <option value="en">🇬🇧 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section class="page-header">
-        <h1>Find Us</h1>
-        <p>Come visit our restaurant in the heart of the city.</p>
+        <h1 data-i18n="loc_title">Find Us</h1>
+        <p data-i18n="loc_subtitle">Come visit our restaurant in the heart of the city.</p>
     </section>
 
     <section class="location-content">
         <div class="address-info">
             <h2>Restaurante Prueba</h2>
-            <p><strong>Address:</strong> 123 Culinary Street, Food District, City 10001</p>
-            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-            <p><strong>Email:</strong> hello@restauranteprueba.com</p>
-            <h3>Opening Hours</h3>
-            <p>Tuesday - Sunday: 12:00 - 15:30 & 19:30 - 23:00</p>
-            <p>Monday: Closed</p>
+            <p><strong data-i18n="loc_address_lbl">Address:</strong> <span data-i18n="loc_address_val">123 Culinary Street, Food District, City 10001</span></p>
+            <p><strong data-i18n="loc_phone_lbl">Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong data-i18n="loc_email_lbl">Email:</strong> hello@restauranteprueba.com</p>
+            <h3 data-i18n="loc_hours_title">Opening Hours</h3>
+            <p data-i18n="loc_hours_val1">Tuesday - Sunday: 12:00 - 15:30 & 19:30 - 23:00</p>
+            <p data-i18n="loc_hours_val2">Monday: Closed</p>
         </div>
 
         <div class="map-container">
@@ -51,8 +56,10 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Restaurante Prueba. All rights reserved.</p>
+        <p data-i18n="footer_text">&copy; 2026 Restaurante Prueba. All rights reserved.</p>
     </footer>
 
+    <!-- THIS LINE IS REQUIRED TO RUN THE TRANSLATIONS -->
+    <script src="script.js"></script>
 </body>
 </html>
