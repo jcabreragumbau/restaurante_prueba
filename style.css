@@ -260,3 +260,56 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* --- MOBILE RESPONSIVENESS (VERTICAL SCREENS) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Stack the Header and Navigation */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-wrap: wrap; /* Allows links to drop to a new line if they run out of space */
+        justify-content: center;
+        margin-top: 15px;
+        gap: 12px;
+    }
+
+    /* 2. Shrink Huge Text on the Homepage */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* 3. Fix Menu Items Squishing the Price */
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-price {
+        margin-left: 0;
+        margin-top: 8px;
+        align-self: flex-end; /* Pushes the price to the right side on mobile */
+    }
+
+    /* 4. Reduce Massive Spacing on Subpages */
+    .page-header {
+        padding: 2rem 20px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .booking-section, 
+    .menu-content, 
+    .location-content {
+        padding: 2rem 20px; /* Reduces top/bottom padding so content is visible faster */
+    }
+}
